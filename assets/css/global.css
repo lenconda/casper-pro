@@ -147,6 +147,19 @@ a:active,
 a:hover {
     outline: 0;
 }
+a.tag-wrapper {
+    box-sizing: border-box;
+    padding: .5em;
+    background-color: #c5d2d9;
+    color: #333;
+    margin: .25em 0;
+}
+section.tags-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 b,
 strong {
     font-weight: bold;
