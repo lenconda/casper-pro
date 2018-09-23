@@ -109,7 +109,12 @@ body {
 /* ---------------------------------------------------------- */
 
 .site-header {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 64px;
+    z-index: 99999;
     padding-top: 12px;
     padding-bottom: 12px;
     color: #fff;
@@ -661,6 +666,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 
 .post-template .site-main,
 .page-template .site-main {
+    margin-top: 64px;
     padding-bottom: 4vw;
     background: #fff;
 }
