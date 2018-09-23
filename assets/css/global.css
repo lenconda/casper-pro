@@ -153,6 +153,7 @@ a.tag-wrapper {
     background-color: #c5d2d9;
     color: #333;
     margin: 0 .25em .25em 0;
+    display: inline-block;
 }
 b,
 strong {
