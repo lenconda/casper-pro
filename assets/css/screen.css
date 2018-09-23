@@ -735,7 +735,8 @@ The first (most recent) post in the list is styled to be bigger than the others 
     padding: 70px 100px 0;
     min-height: 230px;
     font-family: Georgia, serif;
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
+    font-size: 100% !important;
     line-height: 1.6em;
     background: #fff;
 }
@@ -842,7 +843,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 .post-full-content video {
     display: block;
     margin: 1.5em auto;
-    max-width: 1040px;
+    /* max-width: 1040px; */
     height: auto;
 }
 @media (max-width: 1040px) {
@@ -973,7 +974,7 @@ Usage (In Ghost editor):
 
 .post-full-content h1 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 4.6rem;
+    font-size: 3.2rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
@@ -984,18 +985,18 @@ Usage (In Ghost editor):
 
 .post-full-content h2 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 3.6rem;
+    font-size: 2.8rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h2 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
     }
 }
 
 .post-full-content h3 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    font-size: 2.4rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
@@ -1006,12 +1007,12 @@ Usage (In Ghost editor):
 
 .post-full-content h4 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h4 {
-        font-size: 2.2rem;
+        font-size: 2.1rem;
     }
 }
 
@@ -1022,7 +1023,7 @@ Usage (In Ghost editor):
     border: 0;
     color: var(--blue);
     font-family: Georgia,serif;
-    font-size: 3.2rem;
+    font-size: 2.2rem;
     line-height: 1.35em;
     text-align: center;
 }
@@ -1035,18 +1036,18 @@ Usage (In Ghost editor):
 @media (max-width: 500px) {
     .post-full-content h5 {
         padding: 0 0 0.5em;
-        font-size: 2.2rem;
+        font-size: 2rem;
     }
 }
 
 .post-full-content h6 {
     margin: 0.5em 0 0.2em 0;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 @media (max-width: 500px) {
     .post-full-content h6 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
 
