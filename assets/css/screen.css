@@ -108,6 +108,10 @@ body {
 /* 4. Site Header
 /* ---------------------------------------------------------- */
 
+header.site-header.outer.no-cover a.site-nav-logo {
+    display: none;
+}
+
 .site-header {
     position: fixed;
     top: 0;
