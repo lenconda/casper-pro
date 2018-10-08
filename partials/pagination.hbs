@@ -1,31 +1,17 @@
-{{! Pagination file for custom pagination}}
+<div style="display: none;">
+    <span class="curr-page">{{page}}</span>
+    <span class="total-pages">{{pages}}</span>
+</div>
 
-<nav class="pagination" role="navigation">
-    {{!-- Actual place where the numbers will go --}}
-    <span id="pagination-list" class="page-number"></span>
-    {{!-- Placeholder for number of total pages --}}
-    <div id="page-total" style="display:none;">{{pages}}</div>
-    {{!-- Placeholder for current page --}}
-        <div id="page-current" style="display:none;">{{page}}</div>
-</nav>
-
-<script>
-    //Grab the total pages value
-    var pageTotal = document.getElementById('page-total').innerHTML;
-    //Grab the current page value
-    var pageCurrent = document.getElementById('page-current').innerHTML;
-    //Grab the pagination span element
-    var nav = document.getElementById('pagination-list');
-
-    //For each number, from 1 to the total number of pages, add in the page number and a link to the page
-    for (i = 1; i <= pageTotal; i++) {
-        // If you are on the current page, bold the nubmer and do not link
-        if (i == pageCurrent) {
-                nav.innerHTML = nav.innerHTML + "<strong>" + i + "</strong>";
-        } else {
-            // Otherwise, add a link to the page
-            // This is where all the customization can go, space between each link, commas, etc.
-                nav.innerHTML = nav.innerHTML + "<a href=/page/" + i + ">" + i + "</a>";
-        }
-    }
-</script>
+<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+    {{#if prev}}
+        <li class="pagination-previous"><a href="{{page_url prev}}">&laquo;</a></li>
+    {{else}}
+        <li class="pagination-previous disabled">&laquo;</li>
+    {{/if}}
+    {{#if next}}
+        <li class="pagination-next"><a href="{{page_url next}}">&raquo;</a></li>
+    {{else}}
+        <li class="pagination-next disabled">&raquo;</li>
+    {{/if}}
+</ul>

@@ -286,35 +286,53 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     opacity: 1;
 }
 
-nav.pagination {
+ul.pagination.text-center {
+    list-style-type: none;
     display: flex;
-    margin-bottom: 2rem;
+    align-items: center;
     justify-content: center;
 }
 
-span#pagination-list {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-span#pagination-list > a,
-span#pagination-list > strong {
-    color: #333;
-    padding: 1em;
-    border-radius: .5em;
+ul.pagination.text-center > li {
+    /* padding: .5rem 1rem; */
+    /* border-radius: .5em; */
     margin: 0 .1em;
 }
 
-span#pagination-list > strong {
-    background-color: #d6e0e4;
+ul.pagination.text-center > li.disabled,
+ul.pagination.text-center > li.current,
+ul.pagination.text-center > li > a {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    padding: .5em .8em;
+    border-radius: .5em;
 }
 
-span#pagination-list > a:hover {
-    background-color: #d6e0e4;
+ul.pagination.text-center > li.current,
+ul.pagination.text-center > li > a:hover {
+    background-color: #d6e0e4
+}
+
+ul.pagination.text-center > li.current {
+    font-weight: bold;
+}
+
+ul.pagination.text-center > li > a:hover {
     transition: all .5s;
-    text-decoration: none;
+    cursor: pointer;
+}
+
+ul.pagination.text-center > li.ellipsis:hover {
+    cursor: default;
+    background-color: transparent;
+}
+
+ul.pagination.text-center > li.disabled:hover,
+ul.pagination.text-center > li.disabled {
+    color: #adadad;
+    background-color: transparent;
+    cursor: default;
 }
 
 .site-nav-right {
