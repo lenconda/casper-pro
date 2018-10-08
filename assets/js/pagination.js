@@ -48,11 +48,9 @@ function createPagination() {
         console.log(paginationArr)
         var paginationItem;
         var isCurrent = '';
-
         for (var i = paginationArr.length - 1; i >= 0; i--) {
-        var pageNum = paginationArr[i];
-
-        if (pageNum === currentPage) {
+            var pageNum = paginationArr[i];
+            if (pageNum === currentPage) {
                 paginationItem = '<li class="current">' + pageNum + '</li>';
             } else if (typeof pageNum === 'number') {
                 var urlArray = url.split('/');

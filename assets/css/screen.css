@@ -291,6 +291,7 @@ ul.pagination.text-center {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 ul.pagination.text-center > li {
