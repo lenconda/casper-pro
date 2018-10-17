@@ -150,10 +150,17 @@ a:hover {
 a.tag-wrapper {
     box-sizing: border-box;
     padding: .5em;
-    background-color: #c5d2d9;
+    background-color: rgba(214, 224, 228, .7);
     color: #333;
-    margin: 0 .25em .25em 0;
+    margin: .25em .25em .25em 0;
     display: inline-block;
+    border-radius: .5em;
+    transition: all .4s;
+}
+a.tag-wrapper:hover {
+    text-decoration: none;
+    background-color: rgb(214, 224, 228);
+    transition: all .4s;
 }
 b,
 strong {
