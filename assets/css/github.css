@@ -12,6 +12,8 @@
   font-size: 16px;
   line-height: 1.5;
   word-wrap: break-word;
+  font-weight: 300;
+  padding: 40px;
 }
 
 .markdown-body .pl-c {
@@ -208,7 +210,7 @@
 }
 
 .markdown-body a {
-  color: #0366d6;
+  color: #3eb0ef;
   text-decoration: none;
 }
 
@@ -258,6 +260,7 @@
 .markdown-body h6 {
   margin-top: 0;
   margin-bottom: 0;
+  font-weight: 400 !important;
 }
 
 .markdown-body h1 {
@@ -674,7 +677,7 @@
 .markdown-body :checked+.radio-label {
   position: relative;
   z-index: 1;
-  border-color: #0366d6;
+  border-color: #3eb0ef;
 }
 
 .markdown-body .task-list-item {
