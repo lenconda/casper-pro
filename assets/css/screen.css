@@ -125,6 +125,7 @@ header.site-header.outer.no-cover a.site-nav-logo {
     color: #333;
     background: #f4f8fb no-repeat center center;
     background-size: cover;
+    box-shadow: 8px 28px 50px rgba(39,44,49,.07),1px 6px 12px rgba(39,44,49,.04);
 }
 
 /* .site-header:before {
@@ -938,6 +939,55 @@ The first (most recent) post in the list is styled to be bigger than the others 
     }
 }
 
+.lenconda-post-body {
+    padding: 40px 200px !important;
+}
+
+@media (max-width: 1040px) {
+    .lenconda-post-body {
+        padding: 40px 150px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .lenconda-post-body {
+        padding: 40px 120px !important;
+    }
+}
+
+@media (max-width: 753px) {
+    .lenconda-post-body {
+        padding: 40px 100px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .lenconda-post-body {
+        padding: 40px 60px !important;
+    }
+}
+
+@media (max-width: 622px) {
+    .site-main, .outer {
+        padding: 0 !important;
+        padding-bottom: 4vw !important;
+    }
+
+    .lenconda-post-body {
+        border-radius: 0 !important;
+    }
+
+    .post-card-content-link {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
+@media (max-width: 435px) {
+    .lenconda-post-body {
+        padding: 40px 15px !important;
+    }
+}
 
 /* Full bleed images (#full)
 Super neat trick courtesy of @JoelDrapper
@@ -1195,10 +1245,6 @@ Usage (In Ghost editor):
 
 .post-full-content table {
     -webkit-overflow-scrolling: touch;
-    background: radial-gradient(ellipse at left, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 0 center, radial-gradient(ellipse at right, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 75%) 100% center;
-    background-attachment: scroll, scroll;
-    background-size: 10px 100%, 10px 100%;
-    background-repeat: no-repeat;
 }
 
 .post-full-content table td:first-child {
