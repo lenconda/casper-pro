@@ -968,7 +968,7 @@ The first (most recent) post in the list is styled to be bigger than the others 
 }
 
 @media (max-width: 622px) {
-    .site-main, .outer {
+    .site-main {
         padding: 0 !important;
         padding-bottom: 4vw !important;
     }
