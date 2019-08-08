@@ -2389,3 +2389,7 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
+
+.tags-container {
+    padding: 15px;
+}
